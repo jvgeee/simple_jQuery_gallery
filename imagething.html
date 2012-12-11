@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+
+<style type="text/css">
+	#gallery li{
+		display:none;
+	}
+
+	#gallery li.current {
+		display: block;
+	}
+
+	#gallery li img{width:60%;}
+
+	#controls{font-size:140px; cursor:pointer;}
+
+</style>
+
+</head>
+<body>
+<div id="gallery">
+	<ul>
+		<li class="current"><img src="img/1.jpg" /></li>
+		<li><img src="img/2.jpg" /></li>
+		<li><img src="img/3.jpg" /></li>
+		<li><img src="img/4.jpg" /></li>
+	</ul>
+</div>
+<div id="controls">
+	<span id="left">&#60;</span>
+	<span id="right">&#62;</span>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/gallery.js"></script>
+</body>
